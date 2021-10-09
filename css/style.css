@@ -1,0 +1,57 @@
+/* esto es un comentario 
+
+*/
+* {
+    background-color:rgb(94, 58, 11);
+    color: black;
+    font-family: 'Noto Sans Display', sans-serif;
+    margin-bottom: 0,1%;
+    border: 1% ;
+    padding: 0px;  
+    margin-top: 0px; 
+} 
+
+header {
+    width: 100%;
+    background-image: url(../assets/images/fondito.jpeg);
+    text-align: center;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    position: sticky;
+    overflow: hidden;
+}
+
+
+  ul  a { 
+    background-color: rgb(139, 94, 34);
+    font-family: 'Bebas Neue', cursive;
+    display:block;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    float:inline-start;
+  }
+
+h1 {
+    text-align: center;
+    background-color: rgb(248, 221, 185); 
+    color: black;
+    font-family:'Noto Sans Display', sans-serif;
+    font-size: 1rem;
+}
+
+.Back {
+    text-align: left;
+    background-color: rgb(248, 221, 185);
+    color: black;
+    font-family:'Noto Sans Display', sans-serif;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(248, 221, 185);
+    color: black;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 2vh;
+
+}
