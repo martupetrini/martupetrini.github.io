@@ -8,7 +8,7 @@
     border: 1px dotted greenyellow;
 } 
  body{
-     background-color: rgb(94, 58, 11);;
+     background-color: rgb(94, 58, 11);
  }
 header {
     grid-area: header;
@@ -50,8 +50,6 @@ h1 {
     color: black;
     font-family:'Noto Sans Display', sans-serif;
     font-size: 1rem;
-    
-    
 }
 
 h2
@@ -162,11 +160,15 @@ footer {
 .text3 {
     grid-area: text3;
 }
+.iframe {
+
+    width: 100%;
+    object-fit: cover;
+}
 .bloque {
     display: grid;
     background-color: rgb(94, 58, 11);
-    width: 100vw;
-    height: 100vh;
+   object-fit: contain;
     grid-area:bloque;
     justify-content:space-between;
     grid-template-areas: "quienessomos quienessomos"
@@ -179,13 +181,26 @@ footer {
     grid-template-areas: "header"
                          "bloque"
                          "back";
-    min-width: 100vw;
-    min-height:100vh;
+
     margin:0;
     padding: 0%;
 }
 
+.Back { 
+    text-align: center;
+    color: black;
+    font-family:'Noto Sans Display', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-right: 20px;   
+    grid-area: back;
+   
 
+}
+
+/*************************
+        Responsive
+*************************/
 
 @media only screen and (min-width: 760px) {
     .container {
@@ -209,17 +224,6 @@ footer {
     }
 }
 
-.Back { 
-    text-align: center;
-    color: black;
-    font-family:'Noto Sans Display', sans-serif;
-    padding-bottom: 10px;
-    padding-top: 50px;
-    padding-right: 20px;   
-    grid-area: back;
-   
-
-}
 
 /*
 ul { 
