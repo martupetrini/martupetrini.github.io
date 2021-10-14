@@ -1,12 +1,15 @@
 
 * {
+    
     color: black;
     font-family: 'Noto Sans Display', sans-serif;
     padding: 0;
     margin: 0;
     border: 1px dotted greenyellow;
 } 
-
+ body{
+     background-color: rgb(94, 58, 11);;
+ }
 header {
     grid-area: header;
 }
@@ -144,8 +147,8 @@ footer {
 /********************************
             Quienes somos
 ********************************/
-.quienesomos {
-    min-width: 100vw;
+.quienessomos {
+    min-width: 100%;
     grid-area: quienessomos;
 
 }
@@ -162,6 +165,8 @@ footer {
 .bloque {
     display: grid;
     background-color: rgb(94, 58, 11);
+    width: 100vw;
+    height: 100vh;
     grid-area:bloque;
     justify-content:space-between;
     grid-template-areas: "quienessomos quienessomos"
@@ -212,6 +217,8 @@ footer {
     padding-top: 50px;
     padding-right: 20px;   
     grid-area: back;
+   
+
 }
 
 /*
