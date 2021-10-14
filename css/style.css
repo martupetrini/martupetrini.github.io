@@ -1,11 +1,15 @@
 
 * {
-;
     color: black;
     font-family: 'Noto Sans Display', sans-serif;
     padding: 0;
     margin: 0;
+    border: 1px dotted greenyellow;
 } 
+
+header {
+    grid-area: header;
+}
 
 .Menu {
     background-color: rgb(139, 94, 34);
@@ -15,7 +19,6 @@
     font-family: 'Bebas Neue', cursive;
     overflow: hidden;
     width: 100%;
-    grid-area: "header"
 }
 
 Header ul {
@@ -37,9 +40,6 @@ Header ul {
     padding: 0 10px; 
 }
 
-
-
-
 h1 {
     margin-top: 2px;
     text-align: center;
@@ -57,7 +57,7 @@ h2
 }
 
 h3 {
-    font-size: 0,5rem;
+    font-size: 1rem;
     font-family: 'Noto Sans Display', sans-serif;
 }
 
@@ -65,47 +65,68 @@ h3 {
     text-align: center;
     color: black;
     font-family:'Noto Sans Display', sans-serif;
-    float: right;
     padding-bottom: 10px;
     padding-top: 50px;
     padding-right: 20px;   
 }
 
-.container {
-    background-color:rgb(94, 58, 11);
-    grid-area: "container";
-    display: grid;
-    grid-template-areas: "item1 item2"
-                         "item3 item4";
+.items {
+    padding: 0;
+    margin:0;
+    justify-content:space-between;
+}
+
+.items a {
+    display: block;
+    width: 90vw;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.items img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .item1 {
-    padding: 2rem;
-    justify-content: space-between;
-    flex-direction:row;
-    flex-wrap:wrap;
-    grid-area: "item1";
+    grid-area: item1;
+    
 }
+
 .item2 {
-    padding: 2rem;
-    justify-content: space-between;
-    flex-direction:row;
-    flex-wrap:wrap;
-    grid-area: "item2";
+    grid-area: item2;
+    
 }
+
 .item3 {
-    padding: 2rem;
-    justify-content: space-between;
-    flex-direction:row;
-    flex-wrap:wrap;
-    grid-area: "item3";
+    grid-area: item3;
+   
 }
+
 .item4 {
-    padding: 2rem;
-    justify-content: space-between;
-    flex-direction:row;
-    flex-wrap:wrap;
-    grid-area: "item4";
+    grid-area: item4;
+
+}
+
+.container {
+    background-color:rgb(94, 58, 11);
+    grid-area: container;
+    display: grid;
+    grid-gap: 1rem;
+    padding:1rem;
+    grid-template-areas: "item1" "item2" "item3" "item4";
+    justify-content:space-between;
+
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(248, 221, 185);
+    color: black;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 2vh; 
+    grid-area: footer;
 }
 
 .grid-container {
@@ -118,7 +139,78 @@ h3 {
     padding: 0%;
 
 }
+/********************************
+            Quienes somos
+********************************/
+.quienesomos {
 
+    grid-area: quienessomos;
+
+}
+.text1 {
+    grid-area: text1;
+}
+.text2 {
+    grid-area: text2;
+}
+
+.text3 {
+    grid-area: text3;
+}
+.bloque {
+    display: grid;
+    background-color: rgb(94, 58, 11);
+    width: 100vw;
+    min-height:100vh;
+    grid-area:bloque;
+    justify-content:space-between;
+    grid-template-areas: "quienessomos quienessomos"
+                         "text1 text2"    
+                         "text3 text3";
+     grid-gap: 1rem;
+}
+.grid-bloque {
+    display:grid;
+    grid-template-areas: "header"
+                         "bloque"
+                         "back";
+    margin:0;
+    padding: 0%;
+}
+
+
+
+@media only screen and (min-width: 760px) {
+    .container {
+        grid-template-areas: "item1 item2" 
+                            "item3 item4"; 
+    }
+    .items a {
+        width: 45vw;
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .container{
+        grid-template-areas: "item1 item2" 
+        "item3 item4"; 
+    }
+    .tems a {
+        width: 45vw;
+        height: 40vh;
+    }
+}
+
+.Back { 
+    text-align: center;
+    color: black;
+    font-family:'Noto Sans Display', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-right: 20px;   
+    grid-area: back;
+}
 
 /*
 ul { 
@@ -145,14 +237,7 @@ ul {
    */ 
 
 /* content after o before
-a::before {content:" queen"} */
+a::before {content:" queen"} 
+como tengo que definirlo en tres anchos distintos, tablet con dos y compu con 3, laburo que con seis fotos*/
 
 
-Footer {
-    text-align: center;
-    background-color: rgb(248, 221, 185);
-    color: black;
-    font-family: 'Noto Sans Display', sans-serif;
-    font-size: 2vh; 
-    grid-area: "footer";
-}
