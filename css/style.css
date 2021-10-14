@@ -47,7 +47,7 @@ h1 {
     color: black;
     font-family:'Noto Sans Display', sans-serif;
     font-size: 1rem;
-    min-width: 100vw;
+    
     
 }
 
@@ -145,8 +145,7 @@ footer {
             Quienes somos
 ********************************/
 .quienesomos {
-    width: 100%;
-    min-height: 100vh;
+    min-width: 100vw;
     grid-area: quienessomos;
 
 }
