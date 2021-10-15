@@ -151,6 +151,8 @@ footer {
 
 }
 .text1 {
+    width: 70%;
+    height: 70%;
     grid-area: text1;
 }
 .text2 {
@@ -160,15 +162,21 @@ footer {
 .text3 {
     grid-area: text3;
 }
-.iframe {
+.diviframe {
+    margin: 5px;
+    min-height: 40vh;
 
+}
+.iframe {
+    height: 100%;
     width: 100%;
+    min-height: 40vh;
     object-fit: cover;
 }
 .bloque {
     display: grid;
     background-color: rgb(94, 58, 11);
-   object-fit: contain;
+    object-fit: contain;
     grid-area:bloque;
     justify-content:space-between;
     grid-template-areas: "quienessomos quienessomos"
@@ -196,6 +204,57 @@ footer {
     grid-area: back;
    
 
+}
+/* nuestras birras*/
+
+
+.nombrebirra {
+    grid-area: nombrebirra;
+}
+
+.imgbirras img {
+    width: 20vw;
+    height: 80vh;
+   object-fit: cover;
+ }
+.imgbirras {
+    grid-area: imgbirras;
+    width: 100%;
+max-width: 20vw;
+max-height: 80vh;
+}
+
+
+.descripcion{
+    grid-area: descripcion;
+    
+}
+
+.nuestrasbirras {
+    display: grid;
+    grid-template-areas: "nombrebirra nombrebirra nombrebirra"
+                         "descripcion descripcion imgbirras";
+}
+
+/*proceso artesanal*/
+
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.imagen {
+    width: 45vw;
+    max-height: 50vh;
+    
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*************************
