@@ -20,7 +20,7 @@
     margin: 5px;
     font-family: 'Noto Sans Display', sans-serif;
     text-align: center;
-  /*  background-color:rgb(221, 186, 140); */
+  
 }
 
 header {
@@ -110,14 +110,6 @@ h3 {
     font-family: 'Noto Sans Display', sans-serif;
 }
 
-.Back { 
-    text-align: center;
-    color: black;
-    font-family:'Noto Sans Display', sans-serif;
-    padding-bottom: 10px;
-    padding-top: 50px;
-    padding-right: 20px;   
-}
 
 .Back:hover {
     background-color:rgb(221, 186, 140); 
@@ -286,11 +278,12 @@ footer {
     padding-top: 20px;
     padding-right: 20px;   
     grid-area: back;
-    position: fixed;
-    bottom: 0%;
     width: 100%;
     background-color: rgb(248, 221, 185);
 
+}
+.Back:hover {
+    background-color:rgb(221, 186, 140); 
 }
 /***********************
      Nuestras Birras
@@ -501,7 +494,7 @@ footer {
         margin: auto;
         padding: 0 10px; 
         font-size: 2rem;
-        transition: all 3s;
+        transition: 3s;
 }
 
 
