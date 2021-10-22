@@ -37,6 +37,10 @@ header {
     width: 100%;
     
 }
+
+.Menu a{
+    color:black;
+}
 /*
 Header ul {
     font-size: 1rem;
