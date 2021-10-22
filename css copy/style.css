@@ -500,3 +500,36 @@ footer {
         transition: all 3s;
 }
 
+
+/* animacion*/
+
+
+/*
+ul { 
+    text-align: center; 
+    color: black;
+    font-family:'Noto Sans Display', sans-serif;
+    font-size: 1rem;
+}
+
+ h2 + img {
+    float:right;
+    display: flex;
+    flex-direction: row;
+}
+*/
+
+
+
+/*
+@media only screen and (min-width: 600px) {
+
+}
+@media only screen and (min-width: 760px) {
+   */ 
+
+/* content after o before
+a::before {content:" queen"} 
+como tengo que definirlo en tres anchos distintos, tablet con dos y compu con 3, laburo que con seis fotos*/
+
+
