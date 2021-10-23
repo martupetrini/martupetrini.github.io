@@ -16,7 +16,7 @@
 
 .titulo {
     padding: 5px;
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 5px;
     font-family: 'Noto Sans Display', sans-serif;
     text-align: center;
@@ -59,14 +59,14 @@ Header li {
     margin: auto;
     padding: 0 10px; 
     font-size: 0px;
-    transition: 3s;
+    transition: 3s; /* Transicion*/
     
    
 } 
 Header a {
-    
     width: 200px;
 }
+
 .icono{
     font-size: 2rem;
     
@@ -78,7 +78,7 @@ Header a {
     margin: auto;
     padding: 0 10px; 
     font-size: 2rem;
-    transition:  3s;
+    transition: 3s; /* Transicion*/
 }
 
 Header li:hover {
