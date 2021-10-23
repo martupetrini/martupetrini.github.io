@@ -20,7 +20,7 @@
     margin: 5px;
     font-family: 'Noto Sans Display', sans-serif;
     text-align: center;
-  /*  background-color:rgb(221, 186, 140); */
+
 }
 
 header {
@@ -46,20 +46,31 @@ Header ul {
     background-color: rgb(139, 94, 34);
     text-align: center;
     padding: 1rem;
+    font-size: 0px;
     
 }
 
-  Header li { 
+
+
+Header li { 
     font-family: 'Bebas Neue', cursive;
     background-color: rgb(139, 94, 34);
     text-align: center;
     margin: auto;
     padding: 0 10px; 
-    font-size: 2rem;
-    transition: all 3s;
+    font-size: 0px;
+    transition: 3s;
     
    
 } 
+Header a {
+    
+    width: 200px;
+}
+.icono{
+    font-size: 2rem;
+    
+}
 .icono li {
     font-family: 'Bebas Neue', cursive;
     background-color: rgb(139, 94, 34);
@@ -67,7 +78,7 @@ Header ul {
     margin: auto;
     padding: 0 10px; 
     font-size: 2rem;
-    transition: all 3s;
+    transition:  3s;
 }
 
 Header li:hover {
@@ -327,20 +338,24 @@ footer {
 /*************************
     Proceso Artesanal
 *************************/
+.grid-proceso{
+    min-height: 70vh;
+    margin-bottom: 30px;
+}
+
 
 .imagenes{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    grid-area: imagenes;
 
 }
 
 .imagen {
     width: 45vw;
     max-height: 50vh;
-    grid-area: imagen;
+    
 }
 
 .imagen img{
@@ -353,7 +368,7 @@ footer {
 .text {
     padding: 10px;
     text-align: justify;
-    grid-area: text;
+    
 }
 
 
@@ -411,7 +426,8 @@ footer {
 @media only screen and (min-width: 760px) {
     .container {
         grid-template-areas: "item1 item2" 
-                            "item3 item4"; 
+                            "item3 item4"
+                            "item5 item6"; 
     }
     .items a {
         width: 45vw;
